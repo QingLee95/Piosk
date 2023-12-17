@@ -21,6 +21,7 @@ MACHINE ?= "raspberrypi4-64"
 
 ENABLE_UART = "1"
 
+RM_OLD_IMAGE = "1"
 IMAGE_FSTYPES = "rpi-sdimg"
 #
 # Where to place downloads
