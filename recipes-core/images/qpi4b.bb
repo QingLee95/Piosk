@@ -5,14 +5,12 @@ include recipes-core/images/core-image-base.bb
 
 COMPATIBLE_MACHINE = "^rpi$"
 
-#Remove Avahi daemon
-DISTRO_FEATURES:remove = "zeroconf"
-
-OMXPLAYER  = "${@bb.utils.contains('MACHINE_FEATURES', 'vc4graphics', '', 'omxplayer', d)}"
+OMXPLAYER = "${@bb.utils.contains('MACHINE_FEATURES', 'vc4graphics', '', 'omxplayer', d)}"
 
 IMAGE_INSTALL:append = "\
     ${OMXPLAYER} \
     bcm2835-tests \
+    pi-blaster \
     connman \
     connman-client \
     wireless-regdb-static \

@@ -20,6 +20,10 @@
 MACHINE ?= "raspberrypi4-64"
 
 ENABLE_UART = "1"
+
+# Remove Avahi daemon (Distro features has to be defined in local.conf)
+DISTRO_FEATURES:remove = "zeroconf"
+
 DISTROOVERRIDES:append = ":static_eth0"
 RM_OLD_IMAGE = "1"
 IMAGE_FSTYPES = "rpi-sdimg"
