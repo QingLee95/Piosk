@@ -13,8 +13,6 @@ IMAGE_INSTALL:append = "\
     pi-blaster \
     connman \
     connman-client \
-    wireless-regdb-static \
-    bluez5 \
 "
 
 RRECOMMENDS:${PN} = "\
