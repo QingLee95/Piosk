@@ -21,6 +21,10 @@ MACHINE ?= "raspberrypi4-64"
 
 ENABLE_UART = "1"
 
+# Use busybox init
+VIRTUAL-RUNTIME_init_manager = "busybox"
+VIRTUAL-RUNTIME_dev_manager = "busybox-mdev"
+
 # Remove Avahi daemon (Distro features has to be defined in local.conf)
 DISTRO_FEATURES:remove = "zeroconf"
 
