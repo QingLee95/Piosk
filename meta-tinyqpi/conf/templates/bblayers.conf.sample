@@ -14,5 +14,5 @@ BBLAYERS ?= " \
   /home/qylee/yocto_pi/sources/meta-openembedded/meta-networking \
   /home/qylee/yocto_pi/sources/meta-openembedded/meta-multimedia \
   /home/qylee/yocto_pi/sources/meta-raspberrypi \
-  /home/qylee/yocto_pi/sources/meta-qingpi \
+  /home/qylee/yocto_pi/sources/meta-tinyqpi \
   "

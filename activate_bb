@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export TEMPLATECONF=$(pwd)/sources/meta-tinyqpi/conf/templates
+source $(pwd)/sources/poky/oe-init-build-env build
