@@ -6,13 +6,13 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-  /home/qylee/yocto_pi/sources/poky/meta \
-  /home/qylee/yocto_pi/sources/poky/meta-poky \
-  /home/qylee/yocto_pi/sources/poky/meta-yocto-bsp \
-  /home/qylee/yocto_pi/sources/meta-openembedded/meta-oe \
-  /home/qylee/yocto_pi/sources/meta-openembedded/meta-python \
-  /home/qylee/yocto_pi/sources/meta-openembedded/meta-networking \
-  /home/qylee/yocto_pi/sources/meta-openembedded/meta-multimedia \
-  /home/qylee/yocto_pi/sources/meta-raspberrypi \
-  /home/qylee/yocto_pi/sources/meta-tinyqpi \
+  /home/qylee/yocto_pi/TinyQPi/poky/meta \
+  /home/qylee/yocto_pi/TinyQPi/poky/meta-poky \
+  /home/qylee/yocto_pi/TinyQPi/poky/meta-yocto-bsp \
+  /home/qylee/yocto_pi/TinyQPi/meta-openembedded/meta-oe \
+  /home/qylee/yocto_pi/TinyQPi/meta-openembedded/meta-python \
+  /home/qylee/yocto_pi/TinyQPi/meta-openembedded/meta-networking \
+  /home/qylee/yocto_pi/TinyQPi/meta-openembedded/meta-multimedia \
+  /home/qylee/yocto_pi/TinyQPi/meta-raspberrypi \
+  /home/qylee/yocto_pi/TinyQPi/meta-tinyqpi \
   "
