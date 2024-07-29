@@ -1,0 +1,1 @@
+FILESEXTRAPATHS:prepend:static_eth0 := "${THISDIR}/${PN}:"
