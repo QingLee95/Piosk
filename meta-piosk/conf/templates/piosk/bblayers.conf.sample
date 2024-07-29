@@ -1,0 +1,21 @@
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+LAYERS_PATH = "/home/qylee/git/Piosk"
+BBLAYERS ?= " \
+  ${LAYERS_PATH}/poky/meta \
+  ${LAYERS_PATH}/poky/meta-poky \
+  ${LAYERS_PATH}/poky/meta-yocto-bsp \
+  ${LAYERS_PATH}/meta-openembedded/meta-oe \
+  ${LAYERS_PATH}/meta-openembedded/meta-python \
+  ${LAYERS_PATH}/meta-openembedded/meta-networking \
+  ${LAYERS_PATH}/meta-openembedded/meta-multimedia \
+  ${LAYERS_PATH}/meta-raspberrypi \
+  ${LAYERS_PATH}/meta-clang \
+  ${LAYERS_PATH}/meta-browser/meta-chromium \
+  ${LAYERS_PATH}/meta-piosk \
+  "
