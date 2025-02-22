@@ -25,14 +25,14 @@ LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
 
 ENABLE_UART = "1"
 
-# Use busybox init
-VIRTUAL-RUNTIME_init_manager = "busybox"
+INIT_MANAGER = "systemd"
 
 # Remove Avahi daemon (Distro features has to be defined in local.conf)
 # Remove X11 as this is a wayland only distro
 DISTRO_FEATURES:remove = "zeroconf x11 vulkan"
 
-DISTRO_FEATURES:append = " wayland"
+# When using systemd, weston required pam
+DISTRO_FEATURES:append = " pam"
 
 # Enable static ip on eth0
 DISTROOVERRIDES:append = ":static_eth0"
