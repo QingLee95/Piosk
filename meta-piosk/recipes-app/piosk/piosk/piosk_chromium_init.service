@@ -1,0 +1,17 @@
+[Unit]
+Description=Run script to start chromium in kiosk mode
+Requires=weston.service
+After=weston.service
+
+[Install]
+WantedBy=graphical.target
+
+[Service]
+Type=simple
+User=weston
+Group=weston
+Environment="XDG_RUNTIME_DIR=/run/user/%U"
+ExecStartPre=/bin/bash -c 'echo Start Piosk; \
+                           export WAYLAND_DISPLAY=$(ls $XDG_RUNTIME_DIR/ | grep  '^wayland-[0-9]$' | head -n 1);'
+ExecStart=/usr/bin/chromium --kiosk --hide-scrollbars --no-first-run
+ExecStop=/bin/bash -c 'echo "Stop Piosk"; killproc chromium;'
