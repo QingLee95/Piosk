@@ -24,4 +24,7 @@ At start up the Chromium browser (at the moment only) is started as the only app
 - Upload SD Card image
 
 # How to build image
-See [build.md](./build.md)
+See [build.md](./documentation//build.md).
+
+# How to write image to SD Card
+See [write_sd_image.md](./documentation/write_sd_image.md).
